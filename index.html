@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- SEO básico -->
+  <title>Heitor Gomes — Design, Marketing e Sites</title>
+  <meta name="description" content="Heitor Gomes: designer, estrategista de marketing e desenvolvedor de sites. Identidade visual, redes sociais, campanhas publicitárias e sites que fazem marcas crescerem.">
+  <meta name="theme-color" content="#121212">
+  <link rel="canonical" href="https://heitorgomess.github.io/portfolio-heitor-gomes/">
+
+  <!-- Compartilhamento (WhatsApp, LinkedIn, Instagram) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Heitor Gomes — Design, Marketing e Sites">
+  <meta property="og:description" content="Design, marketing e sites que fazem marcas serem lembradas.">
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='16' fill='%23121212'/><text x='50%' y='58%' text-anchor='middle' font-family='Arial' font-weight='800' font-size='28' fill='%23FF6A3D'>HG</text></svg>">
+
+  <!-- Fontes: Clash Display (títulos) + Inter (textos) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://api.fontshare.com/v2/css?f[]=clash-display@500,600,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- Barra de progresso da rolagem -->
+  <div class="progress" aria-hidden="true"><span></span></div>
+
+  <!-- ===================== MENU ===================== -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#topo" class="nav__logo" aria-label="Heitor Gomes, início">
+        <span class="nav__mark">HG</span>
+        <span class="nav__name">Heitor Gomes</span>
+      </a>
+      <nav aria-label="Principal">
+        <ul class="nav__links" id="menu">
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#processo">Processo</a></li>
+        </ul>
+      </nav>
+      <a href="#contato" class="btn btn--small">Fale comigo</a>
+      <button class="nav__toggle" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="conteudo">
+
+    <!-- ===================== 1. HERO (nome em destaque) =====================
+         Seção "presa" (sticky): enquanto você rola, o nome cresce e some,
+         revelando a frase de posicionamento. -->
+    <section class="scene hero" id="topo" data-scene="hero" style="--len: 300">
+      <div class="sticky">
+        <div class="hero__glow" aria-hidden="true"></div>
+
+        <div class="hero__stage">
+          <p class="eyebrow hero__eyebrow">Designer · Marketing · Web</p>
+          <h1 class="hero__name" aria-label="Heitor Gomes">
+            <span class="hero__line" data-split>Heitor</span>
+            <span class="hero__line hero__line--accent" data-split>Gomes</span>
+          </h1>
+          <p class="hero__sub">Design, marketing e sites para marcas que querem ser lembradas.</p>
+        </div>
+
+        <div class="hero__reveal">
+          <h2 class="display">Ideias viram marca.<br><span class="muted">Marca vira resultado.</span></h2>
+          <p class="lead">Da identidade visual à campanha no ar, do post no feed ao site que vende — tudo pensado junto, com a mesma estratégia.</p>
+        </div>
+
+        <div class="scroll-hint" aria-hidden="true"><span></span>Role para descobrir</div>
+      </div>
+    </section>
+
+    <!-- ===================== 2. SOBRE (texto que acende palavra por palavra) ===================== -->
+    <section class="scene manifesto" id="sobre" data-scene="manifesto" style="--len: 260">
+      <div class="sticky">
+        <div class="wrap">
+          <p class="eyebrow">Sobre mim</p>
+          <p class="manifesto__text" data-words>
+            Sou Heitor Gomes. Junto design, marketing e programação para criar marcas com presença de verdade. Cuido das redes sociais de empresas, crio campanhas que geram cliques e desenvolvo sites rápidos, bonitos e feitos para converter. Cada peça tem um objetivo: fazer o seu cliente parar, lembrar e escolher você.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 3. SERVIÇOS (rolagem horizontal presa) ===================== -->
+    <section class="scene services" id="servicos" data-scene="services">
+      <div class="sticky">
+        <div class="wrap services__head">
+          <p class="eyebrow">O que eu faço</p>
+          <h2 class="display">Tudo que uma marca precisa<br><span class="muted">em um só lugar.</span></h2>
+        </div>
+
+        <div class="services__track" data-track>
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 3l2.6 5.6L20 9.3l-4 4 1 5.7-5-2.8-5 2.8 1-5.7-4-4 5.4-.7z"/></svg>
+            </div>
+            <h3>Design gráfico</h3>
+            <p>Identidade visual, logotipos, artes para redes sociais e materiais impressos com padrão profissional.</p>
+            <ul class="tags"><li>Identidade</li><li>Posts</li><li>Impressos</li></ul>
+          </article>
+
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M4 19V9M10 19V5M16 19v-7M22 19H2"/></svg>
+            </div>
+            <h3>Marketing digital</h3>
+            <p>Estratégia de conteúdo com foco no que importa: engajamento, alcance e cliques no link da bio.</p>
+            <ul class="tags"><li>Estratégia</li><li>Métricas</li><li>Funil</li></ul>
+          </article>
+
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4M8 9l-2 2 2 2M16 9l2 2-2 2"/></svg>
+            </div>
+            <h3>Criação de sites</h3>
+            <p>Landing pages e sites institucionais, do front-end ao back-end, rápidos, responsivos e otimizados para o Google.</p>
+            <ul class="tags"><li>Front-end</li><li>Back-end</li><li>SEO</li></ul>
+          </article>
+
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M3 11v2a1 1 0 001 1h2l5 4V6L6 10H4a1 1 0 00-1 1zM15 9a4 4 0 010 6M18 6a8 8 0 010 12"/></svg>
+            </div>
+            <h3>Campanhas publicitárias</h3>
+            <p>Do conceito à execução: campanhas sazonais, lançamentos e captação de leads com stories e landing page.</p>
+            <ul class="tags"><li>Conceito</li><li>Leads</li><li>Lançamento</li></ul>
+          </article>
+
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+            </div>
+            <h3>Gestão de redes sociais</h3>
+            <p>Planejamento, criação e padronização do feed para a marca ter uma presença consistente todos os dias.</p>
+            <ul class="tags"><li>Calendário</li><li>Feed</li><li>Stories</li></ul>
+          </article>
+
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M6 3h9l5 5v13H6z"/><path d="M15 3v5h5M9 13h7M9 17h5"/></svg>
+            </div>
+            <h3>Propostas e apresentações</h3>
+            <p>Apresentações comerciais persuasivas, com a sua identidade, para fechar mais negócios.</p>
+            <ul class="tags"><li>Pitch</li><li>Propostas</li><li>Slides</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 4. SITES (navegador que cresce até tela cheia) ===================== -->
+    <section class="scene device" id="sites" data-scene="device" style="--len: 300">
+      <div class="sticky">
+        <div class="device__head wrap">
+          <p class="eyebrow">Criação de sites</p>
+          <h2 class="display">Sites que trabalham<br><span class="muted">enquanto você dorme.</span></h2>
+        </div>
+
+        <div class="device__frame">
+          <div class="browser">
+            <div class="browser__bar" aria-hidden="true">
+              <i></i><i></i><i></i>
+              <span>suaempresa.com.br</span>
+            </div>
+            <!-- Mini site de exemplo, feito em HTML (troque por um print de site seu, se quiser) -->
+            <div class="mock">
+              <div class="mock__nav"><b>Sua Marca</b><span>Início</span><span>Serviços</span><span>Contato</span><em>Orçamento</em></div>
+              <div class="mock__hero">
+                <div>
+                  <small>Atendimento em todo o Brasil</small>
+                  <strong>Seu cliente encontra você no Google.</strong>
+                  <p>Um site rápido, bonito e pronto para transformar visitas em contatos.</p>
+                  <em>Quero meu site</em>
+                </div>
+                <div class="mock__art" aria-hidden="true"></div>
+              </div>
+              <div class="mock__row"><span></span><span></span><span></span></div>
+            </div>
+          </div>
+        </div>
+
+        <ul class="device__facts wrap">
+          <li><strong>Responsivo</strong><span>Perfeito no celular, tablet e computador.</span></li>
+          <li><strong>Rápido</strong><span>Carrega em segundos e não perde visitante.</span></li>
+          <li><strong>Encontrável</strong><span>Estruturado para aparecer no Google.</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===================== 5. PROJETOS =====================
+         As capas são composições em CSS. Troque por imagens reais dos seus trabalhos:
+         <img src="img/projeto.jpg" alt="Descrição"> dentro de .project__cover -->
+    <section class="projects light" id="projetos">
+      <div class="wrap">
+        <div class="projects__head">
+          <p class="eyebrow">Projetos selecionados</p>
+          <h2 class="display">Trabalho que aparece.<br><span class="muted">E dá resultado.</span></h2>
+        </div>
+
+        <div class="projects__grid">
+          <article class="project project--wide" data-reveal>
+            <div class="project__cover cover-fordoctor" aria-hidden="true">
+              <span class="cover__tag">Black November</span>
+              <strong>Contabilidade<br>feita para médicos.</strong>
+            </div>
+            <div class="project__info">
+              <h3>ForDoctor Contabilidade</h3>
+              <p>Campanha Black November com captação orgânica de leads: sequência de stories levando à landing page.</p>
+              <ul class="tags tags--light"><li>Campanha</li><li>Stories</li><li>Landing page</li></ul>
+            </div>
+          </article>
+
+          <article class="project" data-reveal>
+            <div class="project__cover cover-sintserpi" aria-hidden="true">
+              <div class="grid-posts"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+            </div>
+            <div class="project__info">
+              <h3>Sintserpi</h3>
+              <p>Design dos posts de Instagram e padronização completa das redes sociais do sindicato.</p>
+              <ul class="tags tags--light"><li>Social media</li><li>Padronização</li></ul>
+            </div>
+          </article>
+
+          <article class="project" data-reveal>
+            <div class="project__cover cover-web" aria-hidden="true">
+              <code>&lt;site&gt;<br>&nbsp;&nbsp;rápido<br>&nbsp;&nbsp;responsivo<br>&nbsp;&nbsp;bonito<br>&lt;/site&gt;</code>
+            </div>
+            <div class="project__info">
+              <h3>Sites e landing pages</h3>
+              <p>Páginas de captura e sites institucionais com código limpo, SEO e foco em conversão.</p>
+              <ul class="tags tags--light"><li>Web</li><li>SEO</li></ul>
+            </div>
+          </article>
+
+          <article class="project project--wide" data-reveal>
+            <div class="project__cover cover-deck" aria-hidden="true">
+              <div class="deck"><i></i><i></i><i></i></div>
+            </div>
+            <div class="project__info">
+              <h3>Propostas comerciais</h3>
+              <p>Apresentações com contexto, problema, solução e investimento — construídas para o cliente dizer sim.</p>
+              <ul class="tags tags--light"><li>Apresentação</li><li>Vendas</li></ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 6. PROCESSO (etapas que trocam na rolagem) ===================== -->
+    <section class="scene process" id="processo" data-scene="process" style="--len: 400">
+      <div class="sticky">
+        <div class="wrap process__grid">
+          <div>
+            <p class="eyebrow">Como eu trabalho</p>
+            <h2 class="display">Quatro etapas.<br><span class="muted">Zero achismo.</span></h2>
+            <div class="process__bar" aria-hidden="true"><span></span></div>
+          </div>
+
+          <ol class="process__steps">
+            <li class="step is-active">
+              <span class="step__num">01</span>
+              <h3>Diagnóstico</h3>
+              <p>Entendo o seu negócio, o seu público e onde a sua marca está hoje — perfil, site e concorrentes.</p>
+            </li>
+            <li class="step">
+              <span class="step__num">02</span>
+              <h3>Estratégia</h3>
+              <p>Defino objetivos, mensagens e canais. Cada post e cada página nascem com uma meta clara.</p>
+            </li>
+            <li class="step">
+              <span class="step__num">03</span>
+              <h3>Criação</h3>
+              <p>Design, textos e código com padrão visual consistente, prontos para publicar.</p>
+            </li>
+            <li class="step">
+              <span class="step__num">04</span>
+              <h3>Resultado</h3>
+              <p>Acompanho as métricas — engajamento, cliques e leads — e ajusto o que for preciso.</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 7. CONTATO ===================== -->
+    <section class="contact" id="contato">
+      <div class="wrap contact__inner">
+        <p class="eyebrow">Vamos conversar</p>
+        <h2 class="contact__title">Bora fazer a sua marca<br><span class="accent">ser lembrada?</span></h2>
+        <p class="lead">Conte o que você precisa. Eu respondo com uma proposta clara, sem enrolação.</p>
+        <div class="contact__actions">
+          <!-- TROCAR: coloque seu número no formato 55DDDNUMERO -->
+          <a class="btn" href="https://wa.me/5500000000000" target="_blank" rel="noopener">Chamar no WhatsApp</a>
+          <!-- TROCAR: seu e-mail profissional -->
+          <a class="btn btn--ghost" href="mailto:contato@seudominio.com.br">Enviar um e-mail</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <span class="footer__brand">Heitor Gomes</span>
+      <ul class="footer__social">
+        <!-- TROCAR pelos seus perfis -->
+        <li><a href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></li>
+      </ul>
+      <small>© <span id="ano"></span> Heitor Gomes. Todos os direitos reservados.</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
